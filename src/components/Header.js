@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => (
     <div>
-        <h1 className="titles">Crypto Analyzer</h1>
+        <h1 className="titles">Top Coins</h1>
         <div className='navigationContainer'>
             <NavLink to='/' activeClassName="isActive" className="navLink" exact>Market Overview</NavLink>
             <NavLink to='/liquidity' activeClassName="isActive" className="navLink" exact>Liquidity Analysis</NavLink>
