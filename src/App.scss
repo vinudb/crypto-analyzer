@@ -1,0 +1,82 @@
+$s-size: 1.2rem;
+$l-size: 3.2rem;
+$desktop-breakpoint: 45rem;
+
+.titles{
+    padding: 1.2rem 3rem 0 3rem;
+    text-align: center;
+    margin: 0;
+    color: #322709;
+}
+
+.navigationContainer{
+  padding: 2.0rem 0;
+  font-size: 1.1rem;
+  @media (min-width: $desktop-breakpoint) {
+    padding: 2.2rem;
+    font-size: 1.4rem;  
+  }
+}
+
+.navLink{
+  padding: 1.0rem;
+  text-decoration: none;
+  color: dimgrey;
+}
+
+.isActive{
+  @extend .navLink;
+  color: goldenrod;
+  font-weight: bold;
+}
+
+.select {
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: $s-size;
+  background-color: white;
+  height: $l-size;
+  width: 100%;
+}
+
+.select *{
+  border-radius:15px;
+  width: 10%;
+}
+
+.selectContainer{
+  padding-right: 3.2rem;
+  padding-left: 3.2rem;
+  @media (min-width: $desktop-breakpoint) {
+    padding-left: 3.2rem;
+    width: 11rem
+  }
+}
+
+.tableContainer{
+  overflow-x:auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: goldenrod;
+  color: white;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
